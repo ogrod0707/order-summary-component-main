@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+body{
+    background-color: var(--Pale-blue);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main{
+  
+    margin: 0 auto;
+    width: 50%;
+   
+     border-radius: 25px;
+    background: #fff;
+}
+.container{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     
+    
+}
+.image img{
+    width: 100%;
+   
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.description{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+   
+}
+.description h2{
+    margin-top: 9%;
+    margin-bottom: 5%;
+}
+.music-plan{
+   
+    width: 80%;
+    height: 70px;
+    background: var(--Very-pale-blue);
+    margin: 5% auto;
+    display: flex;
+    padding: 0 8px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 9px;
+   
+}
+.music-plan-price{
+    margin-right: 15px;
+  
+}
+.music-text{
+    font-weight: 700;
+}
+.desc-text{
+    padding-top: 5px;
+    color: var(--Desaturated-blue);
+    font-weight: 10px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.btn-p{
+    width: 90%;
+    height: 45px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px auto;
+    
+}
+.payment{
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.payment:hover{
+    background-color: hsla(245, 75%, 52%, 70%);
+    transition: 0.2s;
+}
+.cancel{
+    background-color: transparent;
+    color: grey;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.cancel:hover{
+    color: rgb(88, 87, 87);
+}
+
+.frontendmentor{
+    margin: 25px;
+    text-align: center;
+  }
+  a:hover{
+      text-decoration: none;
+
+  }
+  a:visited{
+      color: var(--Dark-blue);
+  }
+
+@media only screen and (max-width: 520px){
+    main{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-device-width: 420px){
+
+    main{
+        width: 85%;
+      
+    }
+
+}
+    
